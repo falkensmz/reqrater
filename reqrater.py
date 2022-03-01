@@ -1,4 +1,4 @@
-# very simple python script to automate the process of creating and installing requirements files for python scripts
+# very simple python script to automate the process of creating and installing requirement files for python scripts
 # written by falkensmz : https://github.com/falkensmz
 import os
 
