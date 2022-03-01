@@ -1,2 +1,2 @@
 # reqrater
-Simple Python script to automate the processo of creating and installing python file requirements
+Simple Python script to automate the process of creating and installing python file requirements
