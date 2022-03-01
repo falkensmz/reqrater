@@ -12,11 +12,14 @@ if choice == 'y' or choice == 'Y':
 elif choice == 'n' or choice == 'N':
     file_path = input("Enter the file path directory > ")
     print("Attempting to navigate to the file directory ... ")
-    os.chdir(file_path)
-    print("Creating requirements file ... ")
-    os.system("pip3 freeze > requirements.txt")
-    print("Installing the requirements on your system ... ")
-    os.system("pip3 install -r requirements.txt")
-    print("[+] Successfully installed the requirements on your system ")
+    try:
+        os.chdir(file_path)
+        print("Creating requirements file ... ")
+        os.system("pip3 freeze > requirements.txt")
+        print("Installing the requirements on your system ... ")
+        os.system("pip3 install -r requirements.txt")
+        print("[+] Successfully installed the requirements on your system ")
+    except Exception as e:
+        print(f"Error: {e}")
 else:
-    print("[-] Unknown error")
+    print("[-] Invalid answer")
